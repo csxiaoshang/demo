@@ -5,6 +5,9 @@ import lombok.Data;
 import java.io.IOException;
 import java.io.OutputStream;
 
+/**
+ * 封装response
+ */
 @Data
 public class HttpResponse {
 
@@ -16,6 +19,7 @@ public class HttpResponse {
 
     public void write(String message){
         StringBuilder stringBuilder = new StringBuilder();
+        //写入简单返回报文
         stringBuilder.append("HTTP/1.1 200 OK\n")
                 .append("Content-Type: text/html\n")
                 .append("\r\n")

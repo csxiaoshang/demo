@@ -3,6 +3,9 @@ package com.ashang.tomcat.servlet;
 import com.ashang.tomcat.http.HttpRequest;
 import com.ashang.tomcat.http.HttpResponse;
 
+/**
+ * 默认servlet
+ */
 public class IndexServlet extends Servlet {
 
     public void doGet(HttpRequest httpRequest, HttpResponse httpResponse){
