@@ -3,6 +3,9 @@ package com.ashang.tomcat.servlet;
 import com.ashang.tomcat.http.HttpRequest;
 import com.ashang.tomcat.http.HttpResponse;
 
+/**
+ * 模板Servlet
+ */
 public abstract class Servlet {
 
 public abstract void doGet(HttpRequest httpRequest, HttpResponse httpResponse);
