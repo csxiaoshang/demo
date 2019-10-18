@@ -28,6 +28,13 @@
             <version>4.12</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty</artifactId>
+            <version>3.6.2.Final</version>
+        </dependency>
+
+
     </dependencies>
     <packaging>war</packaging>
     <properties>

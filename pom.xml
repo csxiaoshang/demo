@@ -5,6 +5,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring</module>
+        <module>nettypractice</module>
+
     </modules>
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
