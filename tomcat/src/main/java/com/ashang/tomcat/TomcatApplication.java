@@ -67,6 +67,7 @@ public class TomcatApplication {
         }
     }
 
+
     public void dispatch(HttpRequest httpRequest, HttpResponse httpResponse) {
 
         //不接收分发/favicon.ico 请求
@@ -80,6 +81,7 @@ public class TomcatApplication {
                 servlet.service(httpRequest, httpResponse);
             } catch (Exception e) {
                 e.printStackTrace();
+
             }
         }
     }
