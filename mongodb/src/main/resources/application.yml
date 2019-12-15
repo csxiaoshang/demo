@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: mongodb-test
+  profiles:
+      active: dev
+
+server:
+  session:
+    timeout: 3600

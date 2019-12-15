@@ -43,9 +43,6 @@ public class TomcatApplication {
             long time = System.currentTimeMillis();
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh-mm-ss");
             System.out.println("currentTime is "+simpleDateFormat.format(time));
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
                     InputStream inputStream = null;
                     try {
                         inputStream = socket.getInputStream();
@@ -62,9 +59,6 @@ public class TomcatApplication {
                     }
 
                 }
-            }).start();
-
-        }
     }
 
 
