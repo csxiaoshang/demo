@@ -3,6 +3,8 @@ package com.ashang.mongodb.service.impl;
 import com.ashang.mongodb.entity.request.ParklotNearByRequest;
 import com.ashang.mongodb.entity.response.ParklotNearByRepData;
 import com.ashang.mongodb.service.ParklotService;
+import com.ashang.mongodb.util.RespUtil;
+import com.mongodb.client.model.geojson.Point;
 import org.springframework.stereotype.Service;
 
 /**
@@ -21,6 +23,7 @@ public class ParklotServiceImpl implements ParklotService {
         ParklotNearByRepData parklotNearByRepData = new ParklotNearByRepData();
         ParklotNearByRequest.MapBean map = parklotNearByRequest.getMap();
         ParklotNearByRequest.LocateBean locate = parklotNearByRequest.getLocate();
-
+        Integer radius = parklotNearByRequest.getRadius();
+        return parklotNearByRepData;
     }
 }

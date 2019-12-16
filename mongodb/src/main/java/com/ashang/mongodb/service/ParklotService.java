@@ -14,5 +14,4 @@ public interface ParklotService {
 
     ParklotNearByRepData queryNearByParklot(ParklotNearByRequest parklotNearByRequest);
 
-    ParklotNearByRepData queryNearByParklot(ParklotNearByRequest parklotNearByRequest);
 }
